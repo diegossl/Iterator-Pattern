@@ -1,17 +1,12 @@
-import ConcreteAggregate from './src/ConcreteAggregate'
-import Iterator from './src/Iterator'
+import WordsCollection from "./src/WordsCollection";
 
-const aggregate: ConcreteAggregate = new ConcreteAggregate()
-aggregate.add({ message: 'one' })
-aggregate.add({ message: 'two' })
-aggregate.add({ message: 'three' })
-aggregate.add({ message: 'four' })
-aggregate.add({ message: 'five' })
+const collection = new WordsCollection()
+collection.addItem('First')
+collection.addItem('Second')
+collection.addItem('Third')
 
-console.log(aggregate.count)
+const iterator = collection.getIterator()
 
-const iterator: Iterator = aggregate.createIterator()
-// while (iterator.hasNext) {
-//   const item: object | undefined = iterator.getCurrent()
-//   console.log(item)
-// }
+while (iterator.valid()) {
+    console.log(iterator.next())
+}
