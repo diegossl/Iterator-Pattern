@@ -2,32 +2,32 @@
   <img src="https://refactoring.guru/images/patterns/cards/iterator-mini.png"/>
 <p/>
 
-# Padrão de projeto iterator
+# Iterator pattern
 
-Iterador é um padrão de design comportamental que permite percorrer elementos de uma coleção sem expor sua representação subjacente (lista, pilha, árvore etc.).
+Iterator is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 
 ## Setup
 
-Para executar o projeto, será necessário instalar as dependências digitando o seguinte comando no terminal:
+To execute the project, it will be necessary to install the dependencies by typing the following command in the terminal:
 
 ```bash
 yarn install
 ```
 
-Para executar o projeto é preciso transpilar o código Typescript para JavaScript. Para isso digite o seguinte comando no terminal:
+To execute the project it is necessary to transpile the Typescript code to JavaScript. To do this, type the following command in the terminal:
 
 ```bash
 yarn tsc
 ```
 
-### Uso
+### Use
 
-Para executar o projeto já transpilado para JavaScript digite o seguinte comando no terminal:
+To execute the project already transpiled into JavaScript, type the following command in the terminal:
 
 ```bash
 yarn start
 ```
 
-## Licença
+## License
 
 MIT
